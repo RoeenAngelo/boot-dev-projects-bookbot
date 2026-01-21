@@ -1,9 +1,11 @@
-from stats import get_num_words, get_num_letters, chars_dict_to_sorted_list, sys
+
+import sys
+from stats import get_num_words, get_num_letters, chars_dict_to_sorted_list
 
 
 
 def main():
-    if sys.argv.__len__() != 2:
+    if len(sys.argv) < 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     book_path = sys.argv[1]
